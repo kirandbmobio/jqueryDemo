@@ -1,0 +1,27 @@
+.myname,.panel{
+    padding:6px;
+    background-color: darkgray;
+    text-align: center;
+    border:1px solid black;
+}
+.panel{
+    padding:70px;
+    display:none
+}
+.block{
+    height:100px;
+    width:100px;
+    background-color: yellow;
+    border:1px solid green;
+    position: relative;
+    top:10px;
+    left:10px;
+}
+.divblock{
+    height: 100px;
+    width:100px;
+    background-color: red;
+    position: relative;
+    top:10px;
+    left:10px;
+}
