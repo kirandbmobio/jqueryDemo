@@ -96,15 +96,18 @@ $(document).ready(function () {
     $('.fadeto').click(function () {
         $('.divcolor').fadeTo('slow', 0.15);
     })
-    // $('.myname').click(function () {
-    //     $('.panel').slideDown(3000);
-    // });
+    $('.myname').click(function () {
+        $('.panel').slideDown(3000);
+    });
     // $('.myname').click(function () {
     //     $('.panel').slideUp(6000);
     // });
     //slide toggle
-    $('.myname').click(function () {
-        $('.panel').slideToggle();
+    // $('.myname').click(function () {
+    //     $('.panel').slideToggle();
+    // });
+    $("#stop").click(function () {
+        $(".panel").stop();
     });
     $('.animate').click(function () {
         $('.block').animate({
@@ -118,5 +121,14 @@ $(document).ready(function () {
         let div = $('.divblock');
         div.animate({ height: '100px', opacity: 0.3 }, 'slow');
         div.animate({ width: '200px', opacity: 0.5 }, 'slow');
-    })
+    });
+    $(".callback").click(function () {
+        $(".callbackhide").hide("slow", function () {
+            alert("The paragraph is now hidden");
+        });
+    });
+    $(".chaining").click(function () {
+        $("#chaininghide").css('color', 'green').slideUp(2000).slideDown(2000);
+    });
+
 })

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="./javascript/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="ancestors">great grandparent
+        <ul>grandparent
+            <li>direct parent
+                <span>
+                    abc
+                </span>
+            </li>
+            <li>
+                <span>
+                    abcd
+                </span>
+            </li>
+            <li>
+                <span>
+                    abcde
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="descendants" style="width:500px;">div (current element)
+        <p class="first">p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p class="second">p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+    <script src="./javascript//traverse.js"></script>
+</body>
+
+</html>

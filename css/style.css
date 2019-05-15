@@ -25,3 +25,38 @@
     top:10px;
     left:10px;
 }
+.blue{
+    color:blue
+}
+.bgcolor{
+    background-color: yellow
+}
+.div1{
+    height:200px;
+    width:300px;
+    background-color: aqua;
+    border:1px solid black;
+    padding:10px;
+    margin:10px;
+}
+.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+  .descendants * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+  .siblings *{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
