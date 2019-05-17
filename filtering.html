@@ -3,10 +3,10 @@
 
 <head>
     <title>This is Filtering Demo</title>
-    <link rel="stylesheet" href="css/style.css">
 
     <script src="javascript/jquery-3.4.1.js"></script>
     <script src="./javascript/filtering.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -43,7 +43,42 @@
     <p class="intro">I live in Chokadi (index 9).</p>
     <p>My best friend is Vishnu and Vishal (index 10).</p>
     <button class="index">Click to enter index</button><button class="classWise">Click to filter p</button>
+    <h2>Filterable Table</h2>
+    <p>Type something in the input field to search the table for first names, last names or emails:</p>
+    <input id="myInput" type="text" placeholder="Search..">
+    <br><br>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>Jigar</td>
+                <td>Patel</td>
+                <td>jigar@gmail.com</td>
+            </tr>
+            <tr>
+                <td>haresh</td>
+                <td>Metaliya</td>
+                <td>haresh@gmail.com</td>
+            </tr>
+            <tr>
+                <td>jignesh</td>
+                <td>Dabhi</td>
+                <td>jignehs@gmail.com</td>
+            </tr>
+            <tr>
+                <td>jitu</td>
+                <td>Panchani</td>
+                <td>jitu@yahoo.com</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
