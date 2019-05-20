@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event References</title>
+    <script src="./javascript/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/event.reference.js"></script>
+</head>
+
+<body>
+    <div style="color:red">Click on each p element to return the data passed with the on() method.</div>
+
+    <p class="click">Click me to fire click event</p>
+    <p class="dbclick">Double click me to fire double click event</p>
+    <h1 class="current-target">Hello Friends Click Me to show event current target value</h1>
+    <h2 class="current-target">same as above</h2>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is another paragraph.</p>
+    <div class="delegate-event" style="background-color:yellow">
+        <p>Click the button to change the background color of this div.</p>
+        <button class="change-color">Click me!</button>
+    </div>
+    <a href="https://mySite.com/">Go to mysite.com</a>
+    <p>The preventDefault() method will prevent the link above from following the URL.</p>
+    <p>Click the link and check if the default action is prevented.</p>
+    <div class="propogation"
+        style="height:100px;width:300px;padding:10px;border:1px solid black;background-color:yellowgreen;">Click on
+        this
+        div element.</div>
+
+    <pre class="custom-namespace">Click on this paragraph.</pre>
+    <button class="btn-namespace">Remove namespace</button>
+</body>
+
+</html>
